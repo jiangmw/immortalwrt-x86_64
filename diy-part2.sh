@@ -12,3 +12,9 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+
+# Modify default IP
+sed -i 's/192.168.1.1/192.168.5.9/g' package/base-files/files/bin/config_generate
+
+# Clear the login password
+sed -i 's/$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.//g' package/lean/default-settings/files/zzz-default-settings
